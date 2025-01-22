@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+/* 全体のスタイル */
+body {
+	text-align: center;
+	font-family:'M PLUS Rounded 1c', sans-serif;
+	/*margin: 0% auto;*/
+	padding: 0;
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+
+	/*display: -webkit-flex;/*
+    /*display: flex;/*
+    justify-content: ; /* 横方向の中央揃え */
+	justify-content: space-between;
+	align-items: center;
+	/* 縦方向の中央揃え */
+	/*height: 100vh; /* ビューポート全体の高さ */
+	background-color: #e6f7ff;
+	/* 薄い青の背景 */
+	/*font-family: Arial, sans-serif;*/
+
+}
+
+h2 {
+	display: inline-block;
+	border-bottom: 3px dotted #000;
+
+}
+
+/* コンテナ */
+.container {
+	text-align: center;
+	background-color: #f9f9f9;
+	/* 冷蔵庫のような白 */
+	border: 1px solid #dcdcdc;
+	/* 冷蔵庫のエッジ */
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	/* 軽い影 */
+	padding: 20px 40px;
+	width: 300px;
+}
+
+/* タイトル */
+.title {
+	color: #4a4a4a;
+	/* 少し濃いグレー */
+	font-size: 24px;
+	margin-bottom: 20px;
+	justify-content: space-between;
+	align-items: center;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+
+/* コンテンツ */
+.content p {
+	color: #6c6c6c;
+	/* 中間的なグレー */
+	font-size: 16px;
+	margin-bottom: 20px;
+	justify-content: space-between;
+	align-items: center;
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+
+
+}
+
+/* ボタン */
+.button {
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #d9ecf2;
+	/* 冷蔵庫っぽい薄い青 */
+	color: #4a4a4a;
+	/* 落ち着いたグレー */
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.button:hover {
+	background-color: #b0d4e3;
+	/* ホバー時の濃い青 */
+}
+
+/* テーブル全体のスタイル */
+table {
+	margin: 20px auto;
+	/* テーブルを中央揃え */
+	border-collapse: collapse;
+	/* セル間の隙間をなくす */
+	width: 70%;
+	/* テーブルの幅を適度に設定 */
+	font-size: 16px;
+	background-color: #f9f9f9;
+	/* 冷蔵庫っぽい白背景 */
+	border: 1px solid #dcdcdc;
+	/* グレーの境界線 */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	/* 軽い影で立体感 */
+}
+
+/* ヘッダーのスタイル */
+table th {
+	background-color: #d9ecf2;
+	/* 冷蔵庫っぽい薄い青 */
+	color: #4a4a4a;
+	/* 落ち着いたグレーのテキスト */
+	padding: 10px;
+	border: 1px solid #dcdcdc;
+	/* 境界線 */
+	text-align: center;
+	/* 中央揃え */
+	font-weight: bold;
+
+}
+
+/* セルのスタイル */
+table td {
+	padding: 10px;
+	text-align: center;
+	/* 中央揃え */
+	border: 1px solid #dcdcdc;
+	/* 境界線 */
+	color: #6c6c6c;
+	/* 中間グレー */
+	background-color: #ffffff;
+	/* 白背景 */
+}
+
+/* 奇数行に色を付けて交互に見やすく */
+table tr:nth-child(odd) td {
+	background-color: #f0f8fb;
+	/* 薄い青 */
+}
+
+/* テーブルの最初の列（野菜名）のスタイル */
+table td:first-child {
+	font-weight: bold;
+	/* 野菜名を少し目立たせる */
+}
+
+/* ホバー時のスタイル */
+table tr:hover td {
+	background-color: #e6f7ff;
+	/* 冷蔵庫っぽい青のハイライト */
+	color: #333;
+	/* 濃い文字色 */
+}
